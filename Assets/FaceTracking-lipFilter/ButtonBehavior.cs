@@ -4,14 +4,7 @@ using UnityEngine;
 
 public class ButtonBehavior : MonoBehaviour
 {
-    // public GameObject faceMesh;
-    // public Material[] filterMaterials;
-
     public bool b0dwn, b1dwn, b2dwn, b3dwn = false;
-
-    // public void ChangeFilter(int index) {
-    //     faceMesh.GetComponent<MeshRenderer>().material = filterMaterials[index];
-    // }
 
     public void pressDownButton(int index) {
         if (index == 0) {

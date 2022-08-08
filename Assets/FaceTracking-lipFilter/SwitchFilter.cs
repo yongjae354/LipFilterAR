@@ -8,8 +8,6 @@ public class SwitchFilter : MonoBehaviour
     public Material[] filterMaterials;
     public int numMaterials;
     public GameObject ButtonManager;
-    private bool buttonPressed = false;
-    private int buttonNum;
 
     // Start is called before the first frame update
     void Start()
@@ -20,10 +18,12 @@ public class SwitchFilter : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // if (buttonPressed) {
-        //     ChangeFilterToSpecific(buttonNum);
-        //     buttonPressed = false;
-        // } 
+        SwitchFilterOnButtonAction();
+    }
+
+    /* Checks if a button is pressed down, and changes the filter to
+    /* the filter mapped by the button **/
+    void SwitchFilterOnButtonAction() {
         if (ButtonManager.GetComponent<ButtonBehavior>().b0dwn) {
             ChangeFilterToSpecific(0);
             ButtonManager.GetComponent<ButtonBehavior>().b0dwn = false;
@@ -42,37 +42,29 @@ public class SwitchFilter : MonoBehaviour
         }
     }
 
-    
-    
-    // public void pressButton(int n) {
-    //     buttonPressed = true;
-    //     buttonNum = n;
-    // }
-
-
     void ChangeFilterToSpecific(int index) {
         GetComponent<MeshRenderer>().material = filterMaterials[index];
     }
 
-    // void ChangeFilter()
-    // {
-    //     GetComponent<MeshRenderer>().material = filterMaterials[i];
-    //     i++;
-    //     if (i == numMaterials)
-    //     {
-    //         i = 0;
-    //     }
-    // }
 
-    // void SwitchFilterOnTouch() {
-    //     if (Input.touchCount > 0)
-    //     {
-    //         Touch touch = Input.GetTouch(0);
-    //         if (touch.phase == TouchPhase.Began)
-    //         {
-    //             ChangeFilter();
-    //         }
-    //     }
-    // }
+    void SwitchFilterOnTouch() {
+        if (Input.touchCount > 0)
+        {
+            Touch touch = Input.GetTouch(0);
+            if (touch.phase == TouchPhase.Began)
+            {
+                ChangeFilter();
+            }
+        }
+    }
+        void ChangeFilter()
+    {
+        GetComponent<MeshRenderer>().material = filterMaterials[i];
+        i++;
+        if (i == numMaterials)
+        {
+            i = 0;
+        }
+    }
     
 }
