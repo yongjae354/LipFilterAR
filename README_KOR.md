@@ -1,7 +1,7 @@
-[a relative link](README_KOR.md)
+[a relative link](README.md)
 
 # LipFilter AR
-This is a Unity project for Android, where you can test different colors of lipstick using AR.
+블라블라블라블라블라블라블라블라블라블라
 
 ## Requirements
 You will need Unity, and an android phone running Android 7.0 or higher.
@@ -24,3 +24,5 @@ Either:
 * Build APK
     
      Hit `Build`. (or `Build And Run` to generate an apk file and install it to the device)
+
+블라블라
