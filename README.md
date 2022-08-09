@@ -20,5 +20,5 @@ Either:
 2. `Patch` or `Patch And Run`.
 
 * Build APK
-
- Hit `Build`. (or `Build And Run` to generate an apk file and install it to the device)
+    
+     Hit `Build`. (or `Build And Run` to generate an apk file and install it to the device)
