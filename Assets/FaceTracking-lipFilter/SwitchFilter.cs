@@ -4,16 +4,9 @@ using UnityEngine;
 
 public class SwitchFilter : MonoBehaviour
 {
-    private int i;
+    private int i = 1;
     public Material[] filterMaterials;
-    public int numMaterials;
     public GameObject ButtonManager;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        i = 1;
-    }
 
     // Update is called once per frame
     void Update()
@@ -64,10 +57,11 @@ public class SwitchFilter : MonoBehaviour
     void ChangeFilter() {
         GetComponent<MeshRenderer>().material = filterMaterials[i];
         i++;
-        if (i == numMaterials)
+        if (i >= filterMaterials.Length)
         {
             i = 0;
         }
+        
     }
     
 }
