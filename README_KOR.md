@@ -1,6 +1,6 @@
 [ENGLISH](README.md)
 
-# LipFilter AR
+# LipFilter AR :lips:
 립필터 AR은 가상 메이크업을 위해 만들어진 유니티 모바일 앱 입니다.
 
 전면 카메라를 이용하여 여러가지 립스틱 컬러를 체험해 볼 수 있습니다.
