@@ -22,7 +22,7 @@ public class SwitchFilter : MonoBehaviour
     }
 
     /* Checks if a button is pressed down, and changes the filter to
-    /* the filter mapped by the button **/
+    /* the filter mapped by the button. **/
     void SwitchFilterOnButtonAction() {
         if (ButtonManager.GetComponent<ButtonBehavior>().b0dwn) {
             ChangeFilterToSpecific(0);
@@ -42,11 +42,13 @@ public class SwitchFilter : MonoBehaviour
         }
     }
 
+    /* Takes an index and switches the displaying material to a material in 
+    /* filterMaterials[]. **/
     void ChangeFilterToSpecific(int index) {
         GetComponent<MeshRenderer>().material = filterMaterials[index];
     }
 
-
+    /* Switches the filter when screen is touched. **/
     void SwitchFilterOnTouch() {
         if (Input.touchCount > 0)
         {
@@ -57,8 +59,9 @@ public class SwitchFilter : MonoBehaviour
             }
         }
     }
-        void ChangeFilter()
-    {
+
+    /* Changes the displaying filter to the next filter in filterMaterials[]. **/
+    void ChangeFilter() {
         GetComponent<MeshRenderer>().material = filterMaterials[i];
         i++;
         if (i == numMaterials)
