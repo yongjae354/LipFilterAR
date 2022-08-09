@@ -1,4 +1,4 @@
-[README_한글](README_KOR.md)
+[한글](README_KOR.md)
 # LipFilter AR
 This is a Unity project for virtual makeup, where users can test different colors of lipstick with AR using their front facing camera.
 
