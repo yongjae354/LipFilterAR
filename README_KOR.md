@@ -22,9 +22,8 @@
 
 
 * 디바이스에 직접 빌드
-1. `File` -> `Build Settings` 에서, `Development Build` 체크
-2. `Patch` 또는 `Patch And Run` 클릭
+    1. `File` -> `Build Settings` 에서, `Development Build` 체크
+    2. `Patch` 또는 `Patch And Run` 클릭
 
 * APK로 빌드
-
-    `Build` 또는 `Build And Run` 클릭
+    * `Build` 또는 `Build And Run` 클릭

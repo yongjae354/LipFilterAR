@@ -19,9 +19,8 @@ Compatibility: This project was made using Unity version 2021.3.6f1.
 Either:
 
 * Build Directly on device
-1. In `File` -> `Build Settings`, enable `Development Build`.
-2. `Patch` or `Patch And Run`.
+    1. In `File` -> `Build Settings`, enable `Development Build`.
+    2. `Patch` or `Patch And Run`.
 
 * Build APK
-    
-     Hit `Build`. (or `Build And Run` to generate an apk file and install it to the device)
+    * Hit `Build`. (or `Build And Run` to generate an apk file and install it to the device)
