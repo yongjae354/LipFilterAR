@@ -4,14 +4,16 @@ using UnityEngine;
 
 public class SwitchFilter : MonoBehaviour
 {
-    /* Index used for SwitchFilterOnTouch. **/
+    /* Index used for ChangeFilter. **/
     private int i = 1;
+
     /* Array of materials for face mesh. **/
     public Material[] filterMaterials;
+
     /* A Gameobject that handles button behaviors. **/
     public GameObject ButtonManager;
 
-    // Update is called once per frame
+    /* Update is called once per frame **/
     void Update()
     {
         SwitchFilterOnButtonAction();
@@ -64,7 +66,6 @@ public class SwitchFilter : MonoBehaviour
         {
             i = 0;
         }
-        
     }
     
 }
